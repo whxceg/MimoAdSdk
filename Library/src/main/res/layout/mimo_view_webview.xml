@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mimo_webview_rl_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/mimo_webview_iv_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:padding="7.5dp"
+            android:src="@drawable/mimo_internal_webview_back" />
+
+        <ImageView
+            android:id="@+id/mimo_webview_iv_close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:padding="7.5dp"
+            android:src="@drawable/mimo_internal_webview_close" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/mimo_webview_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/mimo_webview_rl_tool_bar"
+        android:background="#dcdcdc" />
+
+    <WebView
+        android:id="@+id/mimo_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mimo_webview_line"
+        android:scrollbarSize="3dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+</RelativeLayout>

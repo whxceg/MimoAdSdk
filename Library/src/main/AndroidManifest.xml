@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sam.lib.mimoadsdk">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <application>
+        <activity
+            android:name="com.miui.zeus.mimo.sdk.ad.reward.RewardVideoAdActivity"
+            android:configChanges="mcc|mnc|orientation|keyboardHidden" />
+        <activity android:name="com.miui.zeus.mimo.sdk.view.WebViewActivity" />
+    </application>
+
+</manifest>

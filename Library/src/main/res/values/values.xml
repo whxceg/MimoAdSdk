@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="adBlack">#000000</color>
+    <color name="adMarkTextGray">#787878</color>
+    <color name="adWhite">#ffffff</color>
+    <dimen name="video_count_down_text_left_margin">22dp</dimen>
+    <dimen name="video_count_down_text_top_margin">22dp</dimen>
+    <dimen name="video_volume_buttom_right_margin">13dp</dimen>
+    <dimen name="video_volume_buttom_top_margin">13dp</dimen>
+    <dimen name="video_volume_size">30dp</dimen>
+    <string name="reward_video_press_back_msg">Can only get reward when the video is finished</string>
+</resources>

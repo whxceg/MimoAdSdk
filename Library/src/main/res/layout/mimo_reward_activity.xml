@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.zeus.mimo.sdk.view.EventRecordFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mimo_reward_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.miui.zeus.mimo.sdk.video.VideoAdView
+        android:id="@+id/mimo_reward_video_ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/mimo_reward_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_gravity="bottom"
+        android:background="#e6ffffff">
+
+        <ViewFlipper
+            android:id="@+id/mimo_reward_view_flipper"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:inAnimation="@anim/mimo_anim_in"
+            android:outAnimation="@anim/mimo_anim_out">
+
+        </ViewFlipper>
+
+        <TextView
+            android:id="@+id/mimo_reward_download_btn"
+            android:layout_width="73dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp"
+            android:background="@drawable/mimo_reward_banner_btn_bg"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:id="@+id/mimo_reward_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="29dp"
+            android:layout_toLeftOf="@id/mimo_reward_download_btn"
+            android:layout_toRightOf="@id/mimo_reward_view_flipper"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mimo_reward_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textColor="#4d4d4d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mimo_reward_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mimo_reward_title"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textColor="#b3b3b3"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mimo_reward_fl_end_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</com.miui.zeus.mimo.sdk.view.EventRecordFrameLayout>

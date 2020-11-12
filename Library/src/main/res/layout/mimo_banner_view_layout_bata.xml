@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/adWhite"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.miui.zeus.mimo.sdk.view.FlexibleImageView
+        android:id="@+id/mimo_banner_view_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/mimo_banner_view_ad_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/mimo_skip_background"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textSize="4sp" />
+
+    <ImageView
+        android:id="@+id/mimo_banner_view_close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="right|top"
+        android:padding="4dp"
+        android:src="@drawable/mimo_banner_circle_close" />
+
+</FrameLayout>
